@@ -20,7 +20,7 @@ function App() {
     if (query !== "") {
       const result = await Axios.get(url);
       if (!result.data.more) {
-        return setAlert("No food with scuch name");
+        return setAlert("No food with such name");
       }
       console.log(result);
       setRecipes(result.data.hits);
